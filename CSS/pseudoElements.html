@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        h1{
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+        h1::first-letter{
+            color: red;
+        }
+        h1::before{
+            content: "*";
+        }
+        h1::after{
+            content: "*";
+        }
+        h1::first-letter{
+            color: red;
+        }
+
+        ::selection{
+            background-color: yellowgreen;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is H1</h1>
+</body>
+</html>
