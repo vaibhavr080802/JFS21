@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Welcome</h1>
+    <h2 class="code1">Heading1</h2>
+    <h2 class="code1">Heading2</h2>
+    <h2 class="code2">Heading3</h2>
+
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <script>
+        let element1=document.getElementById("title");
+        element1.style.backgroundColor="red";
+
+        let element2=document.getElementsByClassName('code1');
+        element2[0].style.backgroundColor="blue";
+
+        let element3=document.getElementsByClassName('code2');
+        element3[0].style.backgroundColor="yellow";
+
+        let element4=document.getElementsByTagName('p');
+        element4[1].style.backgroundColor="lightgreen";
+        element4[2].style.color="red";
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function outerFunction(){
+    let count=0;
+    function innerFunction(){
+        count++;
+        return count;
+    }
+    return innerFunction;
+}
+
+const a=outerFunction();
+console.log(a());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

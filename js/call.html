@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let car1={carname: "BMW", speed: "300kmph"};
+        let car2={carname: "Ferrari", speed: "350"};
+
+        function attach(reaction, review){
+            console.log(
+                reaction+" "+ "it is "+this.carname+" I rate this car "+review
+
+            );
+        }
+
+        attach.call(car1,"Wow ","4.9");
+        attach.call(car2,"it is art of engineering "," 5");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
